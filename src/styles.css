@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/*Formatiamos el padding y el margin de nuestra app*/
+body { 
+    padding: 0; 
+    margin: 0; 
+    font-family: Roboto, sans-serif;  
+  }
+
+  .my-class .mat-dialog-container{
+    border-radius: 10px;
+    background: rgb(103, 58, 183);
+    color: white;
+  }

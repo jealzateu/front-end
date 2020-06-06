@@ -1,0 +1,26 @@
+<div>
+    <div fxLayout="column" fxLayoutAlign="center center"> 
+        <h1>Control de Usuarios</h1>
+        <hr style="width: 70%;">
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-around cente"> 
+        <div  fxLayout="row" fxLayoutAlign="center center" *ngFor="let item of allUsers">
+            <div>
+                <mat-card style="width: 100%; background-color: antiquewhite;">
+                    <strong>Nombre: </strong>{{item.nombre}}<hr>
+                    <strong>Apellido: </strong>{{item.apellido}}<hr>
+                    <strong>Direccion: </strong>{{item.direccion}}<hr>
+                    <strong>Telefono: </strong>{{item.telefono}}<hr>
+                    <strong>Cedula: </strong>{{item.cedula}}<hr>
+                    <strong>Cargo: </strong>{{item.cargo}}<hr>
+                </mat-card>
+                <div fxLayout="row" fxLayoutAlign="center center" style="margin-top: 10px;">
+                    <button type="submit" (click)="update()" mat-raised-button color="primary" 
+                    style="margin-left: 15%; width: 100px;">Editar</button>
+                    <button type="submit" (click)="delete(item.cedula)" mat-raised-button color="primary" 
+                    style="margin-left: 10%; width: 100px;">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

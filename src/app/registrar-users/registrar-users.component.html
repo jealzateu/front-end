@@ -1,0 +1,65 @@
+<div> 
+    <div fxLayout="column" fxLayoutAlign="center center"> 
+        <h1>Registrar Empleado</h1>
+        <hr style="width: 70%;">
+        <form [formGroup]="form" (ngSubmit)="Submit()" >
+                <div  fxLayout="row">
+                    <p>
+                        <mat-form-field appearance="outline">
+                        <mat-label>Ingresar nombre</mat-label>
+                        <input matInput placeholder="Nombre" formControlName="name">
+                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                        <mat-hint>Ej:Andrés</mat-hint>
+                        </mat-form-field>
+                    </p>
+                    <p style="margin-left: 5%;">
+                        <mat-form-field appearance="outline">
+                        <mat-label>Ingresar apellido</mat-label>
+                        <input matInput placeholder="Apellido" formControlName="Surname">
+                        <mat-icon matSuffix>face</mat-icon>
+                        <mat-hint>Ej:Rodriguez</mat-hint>
+                        </mat-form-field>
+                    </p> 
+                </div>
+                <div  fxLayout="row">
+                    <p>
+                        <mat-form-field appearance="outline">
+                        <mat-label>Ingresar dirección</mat-label>
+                        <input matInput placeholder="Dirección" formControlName="Address">
+                        <mat-icon matSuffix>home</mat-icon>
+                        <mat-hint>Ej:Cra48#23-65</mat-hint>
+                        </mat-form-field>
+                    </p>
+                    <p style="margin-left: 5%;">
+                        <mat-form-field appearance="outline">
+                        <mat-label>Ingresar teléfono</mat-label>
+                        <input matInput placeholder="Teléfono" formControlName="Phone">
+                        <mat-icon matSuffix>call</mat-icon>
+                        <mat-hint>Ej:3145486756</mat-hint>
+                        </mat-form-field>
+                    </p>
+                </div> 
+                <div  fxLayout="row">
+                    <p>
+                        <mat-form-field appearance="outline">
+                        <mat-label>Ingresar cedula</mat-label>
+                        <input matInput placeholder="Cedula" formControlName="Id">
+                        <mat-icon matSuffix>account_box</mat-icon>
+                        <mat-hint>Ej:43633297</mat-hint>
+                        </mat-form-field>
+                    </p>
+                    <p style="margin-left: 5%;">
+                        <mat-form-field appearance="outline">
+                        <mat-label>Ingresar cargo</mat-label>
+                        <input matInput placeholder="Cargo" formControlName="Cargo">
+                        <mat-icon matSuffix>support</mat-icon>
+                        <mat-hint>Ej:Administrador</mat-hint>
+                        </mat-form-field>
+                    </p>
+                </div> 
+                <button type="submit" mat-raised-button color="primary">Registrar</button>             
+        </form>
+    </div>
+</div>
+
+
